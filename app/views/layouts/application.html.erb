@@ -10,6 +10,29 @@
   </head>
 
   <body>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-3">
+            <b>Contact</b>
+            <br />
+            zoebkramer@gmail.com
+            <br />
+            San Francisco CA, 94103
+          </div>
+          <div class="col-12 col-sm-3">
+            <b>Social</b>
+            <br />
+            <%= link_to 'https://github.com/ZoeBKramer' do %>
+              <span class="fa fa-github-square fa-2x social-button"></span>
+            <% end %>
+            <%= link_to 'https://www.linkedin.com/in/zoe-kramer-a68640162/' do %>
+                <span class="fa fa-linkedin-square fa-2x social-button"></span>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
