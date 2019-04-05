@@ -5,11 +5,11 @@ class GamesController < ApplicationController
   end
 
   def new
-    @game = Gram.new
+    @game = Game.new
   end
 
   def create
-    @game = game.create(game_params)
+    @game = Game.create(game_params)
     if @game.valid?
       redirect_to root_path
     else
